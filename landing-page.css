@@ -84,7 +84,7 @@
     text-align: justify;
 }
 
-.signup-btn {
+.signup-btn, .model-btn {
     align-self: flex-start;
     background-color: #3882F6;
     border-radius: 5px;
@@ -97,7 +97,7 @@
 }
 
 .signup-img {
-    height:200px;
+    height:60%;
     background-color: grey;
     color: white;
     width: 200px;
@@ -105,6 +105,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    text-align: center;
 }
 
 .content-2-and-3 {
@@ -134,6 +136,7 @@
 .cards {
     display: flex;
     justify-content: space-between;
+    padding: 40px;
 }
 
 .card-image {
@@ -149,10 +152,6 @@
     text-align: center;
 }
 
-.spacer-tiny {
-    height: 30px;
-}
-
 .content-3 {
     display: flex;
     flex-direction: column;
@@ -161,7 +160,7 @@
 }
 
 .quotes {
-    margin: 50px 150px;
+    margin: 150px 50px;
 }
 
 .quote-spacer {
@@ -172,6 +171,8 @@
     font:36px bolder;
     color: #1F2937;
     font-style: italic;
+    text-align: justify;
+    text-justify: newspaper; /* apparently doesn't work */
 }
 
 .quote-author {
@@ -182,19 +183,35 @@
     height: 150px;
     flex: 1 1 300px;
     display: flex;
-    padding : 30px;
+    margin : 7%;
+    border-radius: 25px;
+    padding: 50px;
     align-items: center;
     justify-content: space-between;
+    background-color: #3882F6;
 }
 
 .model-left {
     flex: 4;
 }
 
+.model-left > * {
+    color:#f9faf8;
+}
+
+.model-title {
+    font-size: 18px;
+    font-weight: bold;
+}
 .model-right {
     display: flex;
     justify-content: center;
     flex: 1;
+}
+
+.model-btn {
+    border:#f9faf8 3px solid;
+    border-radius: 8px;
 }
 
 .footer {
