@@ -97,11 +97,11 @@
 }
 
 .signup-img {
-    height:60%;
+    height:230px;
     background-color: grey;
     color: white;
-    width: 200px;
-    flex: 1;
+    width: 350px;
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,6 +189,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #3882F6;
+    gap: 30px;
 }
 
 .model-left {
@@ -226,4 +227,67 @@
 
     background-color: #1F2937;
     color: white;
+}
+
+@media (max-width: 1100px) {
+
+    .signup-img {
+        flex: 1;
+    }
+
+    @media (max-width: 900px) {
+
+        .content-1 {
+            flex-direction: column;
+        }
+        
+        .signup-img {
+            width: 100%;
+            flex-basis: 250px;
+        }
+
+        .cards {
+            flex-wrap: wrap;
+            align-content: center;
+        }
+
+        @media (715px <= width <= 900px) {
+            .card-4 {
+                margin: 0;
+            }
+        }
+
+        @media (max-width: 714px) {
+            .card-4 {
+                margin: auto;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .header, .content-1 {
+                padding: 0;
+            }
+
+            .cards {
+                gap: 40px;
+            }
+            .card-4 {
+                margin: 0;
+            }
+
+            .model {
+                flex-direction: column;
+                height: auto;
+            }
+
+            @media (max-width: 464px) {
+                .cards > * {
+                    margin: auto;
+                }
+            }
+        }
+
+    }
+
 }
